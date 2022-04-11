@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+body{
+    margin: 0px;
+    padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    box-sizing: border-box;
+}
+
+#root{
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-task{
+    border: 2px solid green;
+    height: 10vh;
+    width: 100vw;
+}
+
+.add-task form{
+    height: 100%;
+    width: 30%;
+    margin: 0px auto;
+    padding: 9px;
+}
+
+.add-task form input{
+    background-color: white;
+    margin: 0px 10px;
+    padding: 9px;
+}
+
+.add-task form input:hover{
+    background-color: rgb(224, 222, 222);
+}
+
+.add-task form input[type='button']:hover{
+    cursor: pointer;
+}
+
+
+.task-list{
+    height: calc(100vh - 10vh);
+    width: 100vw;
+   display: flex;
+   flex-direction: row;
+}
+
+.todo{
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finished{
+    border: 2px solid aqua;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 70%;
+    height: 80%;
+    background-color: aqua;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.title{
+    height: 15%;
+    background-color: teal;
+    font-size: 160%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskDesc{
+    height: 6vh;
+    width: 100%;
+    background-color: tomato;
+    border-bottom: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+span.material-icons{
+    margin-left: 40%;
+    cursor: pointer;
 }
